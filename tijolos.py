@@ -23,6 +23,9 @@ def tijolos(arr):
     min_cortes = 10001
     cortes_possiveis = sum(arr[0])
 
+    if (cortes_possiveis == 1):
+            return len(wall)
+
     for x in range(1, cortes_possiveis):
         c = cortes(arr, x)
         if (c < min_cortes):
