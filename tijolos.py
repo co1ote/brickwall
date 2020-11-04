@@ -24,7 +24,7 @@ def tijolos(arr):
     cortes_possiveis = sum(arr[0])
 
     if (cortes_possiveis == 1):
-            return len(wall)
+            return len(arr)
 
     for x in range(1, cortes_possiveis):
         c = cortes(arr, x)
